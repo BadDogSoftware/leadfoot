@@ -644,6 +644,7 @@ registerSuite('Session', () => {
           })
           .then(function(text: string) {
             assert.strictEqual(text, 'Main');
+            console.log('about to switch');
             return session.switchToFrame('inlineFrame');
           })
           .then(function() {
